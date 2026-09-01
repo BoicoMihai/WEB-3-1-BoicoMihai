@@ -2,18 +2,19 @@ body{
     background-color: rgb(17, 17, 17);
     background-image: url('images/background.png');
     background-repeat: repeat;
-    background-size: 500px 500px;
+    background-size: 800px 800px;
+
 }
 
 .header{
-    background-color: rgb(37, 35, 37);
+    background-color: #0e0d0e;
     width: 100%;
     height: 50px;
     border-radius: 10px;
 }
 
 .side-menu{
-    background-color: rgb(37, 35, 37);
+    background-color: #0e0d0e;
     position: sticky;
     height: 55rem;
     width: 200px;
