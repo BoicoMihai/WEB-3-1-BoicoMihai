@@ -1,0 +1,165 @@
+body {
+    background-color: rgb(13, 13, 13);
+    height: 100%;
+}
+
+@font-face {
+    font-family: font;
+    src: url(fonts/Chopin-Light.ttf);
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding: 14px;
+    border-radius: 20px;
+    background: rgb(41, 41, 41);
+    width: max-content;
+    height: 20px;  
+}
+
+.search-image{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+#input-box{
+    font-family: font;
+    color: white;
+    border: none;
+    font-size: 20px;
+    margin-left: 14px;
+    outline: none;
+    background: transparent;
+    width: 500px;
+}
+
+.header{
+    margin-top: 20px;
+    background-color: rgb(22, 22, 22);
+    display: flex;  
+    flex-direction: row;
+    justify-content: center;
+    justify-self: center;
+    border-radius: 25px;
+    height: 70px;
+    width: max-content;
+    padding: 0px 20px;
+    z-index: 1;
+    position: sticky;
+}
+
+.Saved-items, .Cart-image, .Promotion {
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+}
+
+#button1, #button2, #button3 {
+    margin-left: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#search-img-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#button1:hover, #button2:hover, #button3:hover {
+    transform: scale(1.2);
+    filter: invert(0.2);
+}
+
+#SideBar{
+    background-color: rgb(22, 22, 22);
+    width: 300px;
+    height: 960px;
+    border-radius: 25px;
+    z-index: 10;
+    position: relative;
+}
+
+#Contact{
+    font-family: font;
+    color: white;
+    border: none;
+    font-size: 20px;
+    background:none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#BlueCircle{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    margin-top: 27px;
+}
+
+#Logo{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+#Logo-text{
+    font-family: font;
+    color: white;
+    font-size: 35px;
+}
+
+#Company-Name{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#Filter-Button, #Browse-Button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 40px;  
+}
+
+#FilterImg, #BrowseImg {
+    width: 30px;
+    height: 30px;
+    filter: invert(0.5);
+}
+
+#Sidebar-Categories {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#Filter-Button:hover, #Browse-Button:hover {
+    color: white;
+}
+
+#Filter-Button:hover, #Browse-Button:hover {
+    color: white;
+}
+
+.Sidebar-main-text{
+    font-family: font;
+    margin-left: 10px;
+    font-size: 15px;
+    color: rgba(124, 124, 124);
+}
+
+br{
+    line-height: 20px;
+    color: white;
+}

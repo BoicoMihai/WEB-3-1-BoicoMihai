@@ -1,0 +1,102 @@
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5 ;
+    } to {
+        opacity: 1;
+        scale: 1;   
+    }
+}
+
+.popular{
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    gap: 50px;
+}
+
+.popular-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+}
+
+.popular img{
+    height: 550px;
+    -webkit-box-reflect: b 0px linear-gradient(transparent);
+    transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.popular:hover img{
+    transform: translateX(-120px);
+}
+
+.product-details {
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    color: white;
+    pointer-events: none;
+}
+
+.popular:hover .product-details {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+.product-details h2 {
+    font-family: font;
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    
+}
+
+.product-details h3 {
+    font-family: font;
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.ptext {
+    position: relative;
+    overflow: hidden;
+     animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.ptext h1{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    font-size: 100px;
+    color: white;
+    
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: 200% center;
+    }
+}
+
+.buyb{
+    background: linear-gradient(90deg, #2f7fad, #0077cc);
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: font;
+    display: flex;
+}
