@@ -1,0 +1,31 @@
+.md_albastru { 
+    background-color: #003DA5; 
+    height:80px;
+}
+
+.md_galben {
+    background-color: #FFD200;
+    vertical-align: middle;
+    height:80px;
+}
+
+.md_galben img{
+    width: 30px;
+    height:30px;
+    margin: 5px;
+}
+
+.md_rosu{
+    background-color: #E30613;
+    height:80px;
+}
+
+.steag{
+    border-collapse: collapse;
+    margin: 15px;
+}
+
+.steag td{
+    width: 40px;
+}
+
