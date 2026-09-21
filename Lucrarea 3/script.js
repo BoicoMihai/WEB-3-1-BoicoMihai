@@ -89,3 +89,18 @@ document.getElementById("btn-hartia").addEventListener("click", function () {
 document.getElementById("btn-foarfeca").addEventListener("click", function () {
   playRound("foarfeca");
 });
+
+function resetGame() {
+  gameScore.player = 0;
+  gameScore.computer = 0;
+  gameScore.draws = 0;
+
+  document.getElementById("player-choice").textContent = "-";
+  document.getElementById("computer-choice").textContent = "-";
+  document.getElementById("result").textContent = "Alege o variantă";
+  document.getElementById("score-player").textContent = 0;
+  document.getElementById("score-computer").textContent = 0;
+  document.getElementById("score-draws").textContent = 0;
+}
+
+document.getElementById("btn-reset").addEventListener("click", resetGame);
