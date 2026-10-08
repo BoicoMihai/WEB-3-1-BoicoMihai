@@ -63,6 +63,7 @@ body {
 .suedia-flag {
   width: 120px;
   height: 80px;
+  border-collapse: collapse;
 }
 
 .suedia-flag td.c1 { width: 38px; }

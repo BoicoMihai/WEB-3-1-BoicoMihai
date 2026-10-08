@@ -75,9 +75,7 @@ function playRound(playerChoice) {
   document.getElementById("score-computer").textContent = gameScore.computer;
   document.getElementById("score-draws").textContent = gameScore.draws;
 
-  setTimeout(function () {
-    gameScore.displayScore();
-  });
+  gameScore.displayScore();
 }
 
 document.getElementById("btn-piatra").addEventListener("click", function () {
