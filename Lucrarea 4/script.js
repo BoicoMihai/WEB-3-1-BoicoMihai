@@ -34,7 +34,7 @@ document.getElementById("btn-sterge-sfarsit").addEventListener("click", function
      if (produse.length === 0) {
         alert("Lista este goală!");
     } else {
-        produse.shift();
+        produse.pop();
         afiseazaLista();
     }
 });
