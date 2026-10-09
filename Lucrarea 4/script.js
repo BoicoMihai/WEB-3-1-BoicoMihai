@@ -55,7 +55,7 @@ let elevi = [
 ];
 
 function afiseazaElevi() {
-    document.getElementById("numar").innerHTML = "Număr de elevi: " + elevi.length;
+    document.getElementById("numar").innerHTML = "Numar de elevi: " + elevi.length;
 
     let catalog = document.getElementById("catalog");
     catalog.innerHTML = "";
@@ -74,7 +74,7 @@ function adaugaElev() {
     let nota = Number(document.getElementById("nota").value);
 
     if (nume === "" || varsta <= 0 || nota < 1 || nota > 10) {
-        alert("Completează corect toate câmpurile (nota între 1 și 10)!");
+        alert("Completeaza corect toate campurile (nota intre 1 si 10)!");
         return;
     }
 
@@ -104,9 +104,9 @@ function stergeElev() {
     if (elevGasit) {
         let pozitie = elevi.indexOf(elevGasit);
         elevi.splice(pozitie, 1);
-        mesaj.innerHTML = "Elevul " + elevGasit.nume + " a fost șters.";
+        mesaj.innerHTML = "Elevul " + elevGasit.nume + " a fost sters.";
     } else {
-        mesaj.innerHTML = "Elevul nu a fost găsit!";
+        mesaj.innerHTML = "Elevul nu a fost gasit";
     }
 
     document.getElementById("nume-sterge").value = "";
@@ -123,12 +123,12 @@ function cautaElev() {
 
     if (elevGasit) {
         rezultat.innerHTML =
-            "<p><b>Elev găsit!</b><br>" +
+            "<p><b>Elev gasit</b><br>" +
             "Nume: " + elevGasit.nume + "<br>" +
             "Vârsta: " + elevGasit.varsta + "<br>" +
             "Nota: " + elevGasit.nota + "</p>";
     } else {
-        rezultat.innerHTML = "<p>Elevul nu a fost găsit!</p>";
+        rezultat.innerHTML = "<p>Elevul nu a fost gasit</p>";
     }
 }
 
