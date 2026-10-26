@@ -1,11 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Lista de studenți</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <h1>Lista de studenți</h1>
+
+  <form id="form">
+    <input id="name" placeholder="Nume">
+    <input id="group" placeholder="Grupa">
+    <input id="age" placeholder="Vârsta">
+    <input id="major" placeholder="Specialitatea">
+    <button type="submit">Adaugă</button>
+    <span id="error"></span>
+  </form>
+
+  <p>Număr studenți: <span id="count">0</span></p>
+
+  <fieldset>
+    <legend>Flexbox</legend>
+    <div>justify-content:
+      <button data-prop="justifyContent" data-val="flex-start">flex-start</button>
+      <button data-prop="justifyContent" data-val="center">center</button>
+      <button data-prop="justifyContent" data-val="flex-end">flex-end</button>
+      <button data-prop="justifyContent" data-val="space-between">space-between</button>
+      <button data-prop="justifyContent" data-val="space-around">space-around</button>
+      <button data-prop="justifyContent" data-val="space-evenly">space-evenly</button>
+    </div>
+    <div>align-items:
+      <button data-prop="alignItems" data-val="stretch">stretch</button>
+      <button data-prop="alignItems" data-val="flex-start">flex-start</button>
+      <button data-prop="alignItems" data-val="center">center</button>
+      <button data-prop="alignItems" data-val="flex-end">flex-end</button>
+      <button data-prop="alignItems" data-val="baseline">baseline</button>
+    </div>
+    <div>flex-wrap:
+      <button data-prop="flexWrap" data-val="wrap">wrap</button>
+      <button data-prop="flexWrap" data-val="nowrap">nowrap</button>
+    </div>
+    <div>gap:
+      <input id="gap" type="range" min="0" max="80" value="16">
+      <span id="gapValue">16</span>px
+    </div>
+  </fieldset>
+
+  <div id="list"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>

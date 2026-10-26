@@ -1,0 +1,12 @@
+#list {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 800px;
+  border: 1px solid;
+}
+
+.card {
+  width: 250px;
+  flex-shrink: 0;
+  border: 1px solid;
+}
