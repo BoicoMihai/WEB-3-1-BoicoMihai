@@ -38,7 +38,6 @@ function render() {
   });
 }
 
-// Task 2: add a student from the form
 document.getElementById("form").addEventListener("submit", e => {
   e.preventDefault();
 
@@ -48,7 +47,7 @@ document.getElementById("form").addEventListener("submit", e => {
   const major = document.getElementById("major").value.trim();
 
   if (!name || !group || !ageText || !major) {
-    error.textContent = "Completați toate câmpurile.";
+    error.textContent = "Boico gay.";
     return;
   }
 
@@ -65,7 +64,6 @@ document.getElementById("form").addEventListener("submit", e => {
   render();
 });
 
-// Task 3: delete by ID
 list.addEventListener("click", e => {
   const id = e.target.dataset.id;
   if (!id) return;
@@ -73,7 +71,6 @@ list.addEventListener("click", e => {
   render();
 });
 
-// Task 4: flexbox controls
 document.querySelectorAll("button[data-prop]").forEach(btn => {
   btn.addEventListener("click", () => {
     list.style[btn.dataset.prop] = btn.dataset.val;

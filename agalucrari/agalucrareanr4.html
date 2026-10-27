@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>aga nicolae nr4 msw</title>
+
+  <style>
+    
+    body {
+      font-family: Arial;
+      
+      
+    }
+
+    h1 {
+      text-align: center;
+      
+    }
+
+    
+    #tabel-principal {
+           
+      margin:auto;            
+      background-color: #f7f9fc;
+      border-style: solid;               
+      border-width: 4px;                 
+      border-color: #2f5597;             
+      border-radius: 18px;                        
+     
+    }
+
+    #tabel-principal td {
+      padding: 30px;                     
+      text-align: center;
+    }
+
+    #fereastra principala {
+      width: 100%;
+      height: 450px;
+      background-color: #ffffff;
+      border-style: solid;
+      border-width: 2px;
+      border-color: #9fb3d6;
+      border-radius: 12px;
+    }
+
+    .buton {
+      
+      padding: 12px 80px;
+      color: #ffffff;
+      border-style: solid;
+      border-width: 5px;
+      border-radius: 10px;
+    }
+
+    #buton1 {
+        
+      background-color: #2f5597;         
+      border-color: #1d3a6e;
+      
+    }
+
+    #buton2 {
+      background-color: #2e8b57;         
+      border-color: #1f6140;
+      border-radius: 28px;
+    }
+
+    #buton3 {
+      background-color: #c0562a;         
+      border-color: #8c3b17;
+      border-style: dashed;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Mini browser web</h1>
+
+  <table id="tabel-principal">
+    
+    <tr>
+      <td colspan="3">
+        <iframe id="fereastra principala" name="fereastra principala" width="100%" height="450"
+                src="https://ro.wikipedia.org/wiki/Chi%C8%99in%C4%83u"></iframe>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a id="buton1" class="buton"
+           href="https://ro.wikipedia.org/wiki/Chi%C8%99in%C4%83u"
+           target="fereastra principala">Wikipedia</a>
+      </td>
+      <td>
+        <a id="buton2" class="buton"
+           href="https://www.openstreetmap.org/export/embed.html?bbox=28.76%2C46.96%2C28.96%2C47.06&amp;layer=mapnik"
+           target="fereastra principala">Harta </a>
+      </td>
+      <td>
+        <a id="buton3" class="buton"
+     href="https://en.wikibooks.org/wiki/Main_Page"
+     target="fereastra principala">Wikibooks</a>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
