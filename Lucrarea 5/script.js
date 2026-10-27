@@ -1,14 +1,13 @@
 // Task 1: the array holding all students
 let students = [
-  { id: 1, name: "Ion Popescu", group: "TI-21", age: 19, major: "Informatică", avatar: "avatar.png" },
-  { id: 2, name: "Maria Rusu", group: "TI-22", age: 20, major: "Design Web", avatar: "avatar.png" },
-  { id: 3, name: "Andrei Ceban", group: "SI-21", age: 21, major: "Sisteme informatice", avatar: "avatar.png" },
-  { id: 4, name: "Elena Munteanu", group: "SI-22", age: 18, major: "Securitate cibernetică", avatar: "avatar.png" },
-  { id: 5, name: "Vlad Lungu", group: "TI-23", age: 19, major: "Informatică", avatar: "avatar.png" },
-  { id: 6, name: "Ana Botnaru", group: "SI-23", age: 22, major: "Rețele", avatar: "avatar.png" }
+  { id: 1, name: "Boico Mihai", group: "DAW-241", age: 18, major: "Informatică", avatar: "avatar.png" },
+  { id: 2, name: "Culbida Mihail", group: "DAW-241", age: 17, major: "Design Web", avatar: "avatar.png" },
+  { id: 3, name: "Voljin Polina", group: "DAW-241", age: 18, major: "Sisteme informatice", avatar: "avatar.png" },
+  { id: 4, name: "Bogatu Alexei", group: "DAW-241", age: 17, major: "Securitate cibernetică", avatar: "avatar.png" },
+  { id: 5, name: "Caliniuc Nichita", group: "DAW-241", age: 18, major: "Informatică", avatar: "avatar.png" }
 ];
 
-let nextId = 7;
+let nextId = 6;
 
 const list = document.getElementById("list");
 const count = document.getElementById("count");
